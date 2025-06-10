@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "andrewmod",
+	"version": "${version}",
+	"name": "AndrewMod",
+	"description": "AndrewMod by Andrew Herrera for my final java project",
+	"authors": [
+		"Andrew Herrera"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/andrewmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.andrew.andrewmod.AndrewMod"
+		],
+		"fabric-datagen": [
+			"net.andrew.andrewmod.AndrewModDataGenerator"
+		],
+		"client": [
+			"net.andrew.andrewmod.AndrewModClient"
+		]
+	},
+	"mixins": [
+		"andrewmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
