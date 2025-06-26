@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "andrewmod:item/astralium_ore"
-  }
+  "parent": "andrewmod:block/astralium_ore"
 }
