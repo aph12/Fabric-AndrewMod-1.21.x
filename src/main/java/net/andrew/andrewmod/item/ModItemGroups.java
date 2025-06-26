@@ -18,6 +18,16 @@ public class ModItemGroups {
                         entries.add(ModItems.GLIMMERBERRY);
                     }).build());
 
+    public static final ItemGroup ASTRALIUM_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(AndrewMod.MOD_ID, "astralium"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.astralium"))
+                    .icon(() -> new ItemStack(ModItems.ASTRALIUM_INGOT)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.ASTRALIUM_ORE);
+                        entries.add(ModItems.RAW_ASTRALIUM);
+                        entries.add(ModItems.ASTRALIUM_INGOT);
+                    }).build());
+
+
     public static void registerItemGroups() {
         AndrewMod.LOGGER.info("Registering Item Groups for " + AndrewMod.MOD_ID);
     }
