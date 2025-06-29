@@ -3,8 +3,10 @@ package net.andrew.andrewmod;
 import net.andrew.andrewmod.item.ModItems;
 import net.minecraft.Bootstrap;
 import net.minecraft.SharedConstants;
+import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.TestOnly;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -13,22 +15,23 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Test class for ModItems functionality.
  * Test item registration logic, naming conventions, and item properties.
- * Uses Fabric Loader JUnit to properly initialize Minecraft for testing
+ * Uses Fabric Loader JUnit to properly initialize Minecraft for testing.
+ *
  * https://docs.fabricmc.net/develop/automatic-testing
+ *
  * @author Andrew Herrera
  * @version 1.0
  */
 public class ModItemsTest {
-
     /**
      * Initialize Minecraft before running tests.
      * This allows us to test actual Minecraft objects like items.
      */
     @BeforeAll
     public static void beforeAll() {
+        //Initialize minecraft to allow for tests
         SharedConstants.createGameVersion();
         Bootstrap.initialize();
-
         //Register mod items after minecraft is initialized
         ModItems.registerModItems();
     }
@@ -59,7 +62,6 @@ public class ModItemsTest {
         // If we get here, the method completed successfully.
         assertTrue(true);
     }
-
     /**
      * Tests that all expected items are properly registered.
      * This verifies the registerItem method worked as it should.
@@ -98,5 +100,15 @@ public class ModItemsTest {
         assertEquals(ModItems.GLIMMERBERRY, Registries.ITEM.get(Identifier.of("andrewmod", "glimmerberry")));
         assertEquals(ModItems.RAW_ASTRALIUM, Registries.ITEM.get(Identifier.of("andrewmod", "raw_astralium")));
         assertEquals(ModItems.ASTRALIUM_INGOT, Registries.ITEM.get(Identifier.of("andrewmod", "astralium_ingot")));
+    }
+    /**
+     * Tests that items are instances of the Item class.
+     */
+    @Test
+    public void testItemType() {
+        //Items should be of type Item
+        assertTrue(ModItems.GLIMMERBERRY instanceof Item);
+        assertTrue(ModItems.RAW_ASTRALIUM instanceof Item);
+        assertTrue(ModItems.ASTRALIUM_INGOT instanceof Item);
     }
 }

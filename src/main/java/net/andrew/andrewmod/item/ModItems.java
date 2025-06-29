@@ -36,8 +36,8 @@ public class ModItems {
     /**
      * Registers a new item with the Minecraft item registry.
      * This method creates a unique identifier for the item and registers it with the game.
-     * @param name, The string identifier for the item (must be lowercase, no spaces)
-     * @param item, The item instance to register
+     * @param name The string identifier for the item (must be lowercase, no spaces)
+     * @param item The item instance to register
      * @return The registered item instance
      */
     private static Item registerItem(String name, Item item) {

@@ -6,5 +6,6 @@
   "block.andrewmod.astralium_ore" : "Astralium Ore",
 
   "itemgroup.glimmerberry": "Glimmerberry",
-  "itemgroup.astralium": "Astralium"
+  "itemgroup.astralium": "Astralium",
+  "itemgroup.astralium_blocks": "Astralium Blocks"
 }
