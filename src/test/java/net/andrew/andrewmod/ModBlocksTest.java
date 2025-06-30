@@ -35,7 +35,7 @@ public class ModBlocksTest {
      */
     @Test
     public void testModBlocksInitialization() {
-        //Verify that all mod blocks are initialized and not null
+        //Check that all mod blocks are initialized and not null
         assertNotNull(ModBlocks.ASTRALIUM_ORE);
     }
     /**
@@ -44,9 +44,9 @@ public class ModBlocksTest {
      */
     @Test
     public void testRegisterModBlocks() {
-        //Call the method and verify it doesnt crash.
+        //Call the method and check it doesnt crash.
         ModBlocks.registerModBlocks();
-        //If we get here, the method is working.
+
         assertTrue(true);
     }
     /**

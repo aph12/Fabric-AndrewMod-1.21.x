@@ -41,12 +41,12 @@ public class ModItemsTest {
      */
     @Test
     public void testModItemsInitialization() {
-        //Verify that all mod items are initialized and not null
+        //Check that all mod items are initialized and not null
         assertNotNull(ModItems.GLIMMERBERRY);
         assertNotNull(ModItems.RAW_ASTRALIUM);
         assertNotNull(ModItems.ASTRALIUM_INGOT);
 
-        //Verify items are unique instances
+        //Check items are unique instances
         assertNotSame(ModItems.GLIMMERBERRY, ModItems.RAW_ASTRALIUM);
         assertNotSame(ModItems.RAW_ASTRALIUM, ModItems.ASTRALIUM_INGOT);
         assertNotSame(ModItems.GLIMMERBERRY, ModItems.ASTRALIUM_INGOT);
@@ -57,14 +57,14 @@ public class ModItemsTest {
      */
     @Test
     public void testRegisterModItems() {
-        //Call the method and verify it doesn't crash
+        //Call the method and ensure it doesn't crash
         ModItems.registerModItems();
-        // If we get here, the method completed successfully.
+
         assertTrue(true);
     }
     /**
      * Tests that all expected items are properly registered.
-     * This verifies the registerItem method worked as it should.
+     * This ensures the registerItem method worked as it should.
      */
     @Test
     public void testItemRegistration() {
