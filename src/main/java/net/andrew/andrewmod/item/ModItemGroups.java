@@ -3,7 +3,6 @@ package net.andrew.andrewmod.item;
 import net.andrew.andrewmod.AndrewMod;
 import net.andrew.andrewmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -50,6 +49,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.astralium_blocks"))
                     .icon(() -> new ItemStack(ModBlocks.ASTRALIUM_ORE)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.ASTRALIUM_ORE);
+                        entries.add(ModBlocks.ASTRALIUM_BLOCK);
                     }).build());
 
     /**

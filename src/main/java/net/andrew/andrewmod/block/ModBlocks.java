@@ -28,6 +28,14 @@ public class ModBlocks {
                             .strength(3.0f, 3.0f)
                             .requiresTool()));
     /**
+     * Astralium block, a storage block made from 9 astralium ingots.
+     * Used for compact storage and decorative building.
+     */
+    public static final Block ASTRALIUM_BLOCK = registerBlock("astralium_block",
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL)
+                    .strength(5.0f, 6.0f)
+                    .requiresTool()));
+    /**
      * Registers a block with the Minecraft block registry and creates a corresponding block item.
      * This method handles both block and item registration in one call.
      * @param name The string identifier for the block
