@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "andrewmod:item/astralium_hoe"
+  }
+}

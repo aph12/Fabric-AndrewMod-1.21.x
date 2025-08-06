@@ -3,6 +3,17 @@
   "item.andrewmod.raw_astralium" : "Raw Astralium",
   "item.andrewmod.astralium_ingot" : "Astralium Ingot",
 
+  "item.andrewmod.astralium_sword": "Astralium Sword",
+  "item.andrewmod.astralium_pickaxe": "Astralium Pickaxe",
+  "item.andrewmod.astralium_axe": "Astralium Axe",
+  "item.andrewmod.astralium_shovel": "Astralium Shovel",
+  "item.andrewmod.astralium_hoe": "Astralium Hoe",
+
+  "item.andrewmod.astralium_boots": "Astralium Boots",
+  "item.andrewmod.astralium_leggings": "Astralium Leggings",
+  "item.andrewmod.astralium_chestplate": "Astralium Chestplate",
+  "item.andrewmod.astralium_helmet": "Astralium Helmet",
+
   "block.andrewmod.astralium_ore" : "Astralium Ore",
   "block.andrewmod.astralium_block" : "Block of Astralium",
 

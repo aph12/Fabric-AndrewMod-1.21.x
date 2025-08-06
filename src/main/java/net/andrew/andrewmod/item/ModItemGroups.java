@@ -39,6 +39,18 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.RAW_ASTRALIUM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_ASTRALIUM);
                         entries.add(ModItems.ASTRALIUM_INGOT);
+
+                        entries.add(ModItems.ASTRALIUM_SWORD);
+                        entries.add(ModItems.ASTRALIUM_PICKAXE);
+                        entries.add(ModItems.ASTRALIUM_AXE);
+                        entries.add(ModItems.ASTRALIUM_SHOVEL);
+                        entries.add(ModItems.ASTRALIUM_HOE);
+
+                        entries.add(ModItems.ASTRALIUM_BOOTS);
+                        entries.add(ModItems.ASTRALIUM_LEGGINGS);
+                        entries.add(ModItems.ASTRALIUM_CHESTPLATE);
+                        entries.add(ModItems.ASTRALIUM_HELMET);
+
                     }).build());
     /**
      * Creative tab containing astralium blocks and building materials.
