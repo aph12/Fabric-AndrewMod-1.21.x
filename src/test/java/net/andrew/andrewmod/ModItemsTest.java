@@ -46,10 +46,36 @@ public class ModItemsTest {
         assertNotNull(ModItems.RAW_ASTRALIUM);
         assertNotNull(ModItems.ASTRALIUM_INGOT);
 
+        //Tools
+        assertNotNull(ModItems.ASTRALIUM_SWORD);
+        assertNotNull(ModItems.ASTRALIUM_PICKAXE);
+        assertNotNull(ModItems.ASTRALIUM_AXE);
+        assertNotNull(ModItems.ASTRALIUM_SHOVEL);
+        assertNotNull(ModItems.ASTRALIUM_HOE);
+
+        //Armor
+        assertNotNull(ModItems.ASTRALIUM_HELMET);
+        assertNotNull(ModItems.ASTRALIUM_CHESTPLATE);
+        assertNotNull(ModItems.ASTRALIUM_LEGGINGS);
+        assertNotNull(ModItems.ASTRALIUM_BOOTS);
+
         //Check items are unique instances
         assertNotSame(ModItems.GLIMMERBERRY, ModItems.RAW_ASTRALIUM);
         assertNotSame(ModItems.RAW_ASTRALIUM, ModItems.ASTRALIUM_INGOT);
         assertNotSame(ModItems.GLIMMERBERRY, ModItems.ASTRALIUM_INGOT);
+
+        //Check tools are unique instances
+        assertNotSame(ModItems.ASTRALIUM_SWORD, ModItems.ASTRALIUM_PICKAXE);
+        assertNotSame(ModItems.ASTRALIUM_PICKAXE, ModItems.ASTRALIUM_AXE);
+        assertNotSame(ModItems.ASTRALIUM_AXE, ModItems.ASTRALIUM_SHOVEL);
+        assertNotSame(ModItems.ASTRALIUM_SHOVEL, ModItems.ASTRALIUM_HOE);
+        assertNotSame(ModItems.ASTRALIUM_HOE, ModItems.ASTRALIUM_AXE);
+
+        //Check armor pieces are unique instances
+        assertNotSame(ModItems.ASTRALIUM_HELMET, ModItems.ASTRALIUM_CHESTPLATE);
+        assertNotSame(ModItems.ASTRALIUM_CHESTPLATE, ModItems.ASTRALIUM_LEGGINGS);
+        assertNotSame(ModItems.ASTRALIUM_LEGGINGS, ModItems.ASTRALIUM_BOOTS);
+        assertNotSame(ModItems.ASTRALIUM_BOOTS, ModItems.ASTRALIUM_HELMET);
     }
     /**
      * Tests that registerModItems() method works without crashing.

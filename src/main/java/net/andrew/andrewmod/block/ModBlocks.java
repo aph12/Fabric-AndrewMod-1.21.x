@@ -16,6 +16,9 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
  * ModBlocks is a registry class for all custom blocks in AndrewMod.
  * This class handles registration of astralium-related blocks and their block items.
  * All blocks are automatically registered with corresponding block items for creative mode.
+ *
+ * @author Andrew Herrera
+ * @version 1.0
  */
 public class ModBlocks {
     /**

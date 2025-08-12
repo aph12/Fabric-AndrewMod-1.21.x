@@ -37,6 +37,7 @@ public class ModBlocksTest {
     public void testModBlocksInitialization() {
         //Check that all mod blocks are initialized and not null
         assertNotNull(ModBlocks.ASTRALIUM_ORE);
+        assertNotNull(ModBlocks.ASTRALIUM_BLOCK);
     }
     /**
      * Tests that registerModBlocks() method works without crashing.

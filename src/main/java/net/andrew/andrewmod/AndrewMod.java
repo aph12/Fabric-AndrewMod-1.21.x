@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- *AndrewMod is the main mod class that handles initialization of all mod content.
+ * AndrewMod is the main mod class that handles initialization of all mod content.
  * This mod adds astralium-themed items, blocks, and creative tabs to Minecraft.
  * The mod focuses on astralium ore and related materials for crafting and building.
  *

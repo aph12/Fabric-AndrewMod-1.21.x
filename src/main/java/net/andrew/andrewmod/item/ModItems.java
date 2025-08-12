@@ -8,7 +8,6 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-
 /**
  * ModItems is a registry class for all custom items in AndrewMod.
  * This class handles registration of primarily astralium related items.
@@ -17,7 +16,6 @@ import net.minecraft.util.Identifier;
  * @author Andrew Herrera
  * @version 1.0
  */
-
 public class ModItems {
     /**
      * Glimmerberry food item, a magical berry.
@@ -97,7 +95,6 @@ public class ModItems {
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(AndrewMod.MOD_ID, name), item);
     }
-
     /**
      * Adds astralium ore block to the Natural/Ores creative tab.
      * This method is called by Fabric's ItemGroupEvents system.
@@ -106,7 +103,6 @@ public class ModItems {
     private static void customOres(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.ASTRALIUM_ORE);
     }
-
     /**
      * Adds astralium related crafting ingredients to the Ingredients creative tab.
      * Includes both raw astralium and refined astralium ingots.
@@ -116,7 +112,6 @@ public class ModItems {
         entries.add(ASTRALIUM_INGOT);
         entries.add(RAW_ASTRALIUM);
     }
-
     /**
      * Adds food items to the Food and Drink creative tab.
      * Currently only includes glimmerberries.
@@ -125,7 +120,6 @@ public class ModItems {
     private static void customFoodAndDrink(FabricItemGroupEntries entries) {
         entries.add(GLIMMERBERRY);
     }
-
     /**
      * Registers all mod items and adds them to the appropriate vanilla creative tabs.
      * This method should be called during mod initialization to ensure all items
